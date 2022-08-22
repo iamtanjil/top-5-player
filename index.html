@@ -10,7 +10,8 @@
 </head>
 <body class="bg-slate-900">
     <!-- Header Section Start -->
-    <header class="flex items-center justify-around	bg-black p-6">
+    <header class=" ">
+       <div class="flex items-center justify-around	bg-black p-6">
         <div class="w-80">
             <h1 class="text-center text-gray-100 text-5xl font-medium">Top-5 Player on PSG</h1>
             <p class="text-center text-gray-100 text-2xl ">Here You can see the best player of PSG. You also can see whats about there monthly cost.Whats about the coach and manager cost also a over view of total monthly cost.</p>
@@ -18,6 +19,7 @@
         <div>
             <img class="h-96" src="img/header.jpg" alt="messi image" srcset="">
         </div>
+       </div>
     </header> 
     <!-- Header SEction End   -->
     <!-- Top Player Section Start -->
@@ -124,12 +126,12 @@
                 <h1 class="text-2xl text-center">Budget</h1>
                 <div class="flex justify-around mt-3">
                     <h1>Per Player</h1>
-                    <input type="text" style="width: 100px;" class="text-black">
+                    <input id="player-cost" type="text" style="width: 100px;" class="text-black">
                 </div>
-                <button class="bg-fuchsia-800 px-7 py-2 rounded-lg text-white text-xl font-medium hover:bg-fuchsia-600 mt-4 ml-10">Calculate</button>
+                <button id="btn-player-calc" class="bg-fuchsia-800 px-7 py-2 rounded-lg text-white text-xl font-medium hover:bg-fuchsia-600 mt-4 ml-10">Calculate</button>
                 <div class="flex justify-around mt-5">
                     <h1>Cost For Player</h1>
-                    <h1>$5000</h1>
+                    <h1>$<span id="player-cost-value">5000</span></h1>
                 </div>
                 <div class="flex justify-around mt-3">
                     <h1>Manger</h1>
@@ -149,5 +151,6 @@
         </div>
     </section>
     <!-- Top Player Section End -->
+    <script src="js/app.js"></script>
 </body>
 </html>
